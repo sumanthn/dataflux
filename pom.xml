@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>dataflux</groupId>
+  <artifactId>dataflux-master</artifactId>
+  <version>1.0</version>
+  <packaging>pom</packaging>
+  <name>Dataflux Master</name>
+  <description>Dataflux -- push , ingest, query large amounts of data</description>
+  <url>http://github.com/</url>
+  <inceptionYear>2014</inceptionYear>
+  <developers>
+    <developer>
+      <name>Sumanth N</name>
+      <email>sumanthn83@gmail.com</email>
+    </developer>
+    <developer>
+      <name>Nageswara Rao V</name>
+      <email></email>
+    </developer>
+  </developers>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    
+    <log4j.version>1.2.17</log4j.version>
+      <kryo.version>2.22</kryo.version>
+      <commons-pool.version>2.2</commons-pool.version>
+      <guava.version>16.0.1</guava.version>
+      <reflect.version>0.9.9-RC1</reflect.version>
+      
+      <trove.version>3.0.3</trove.version> 
+      <super-csv.version>2.1.0</super-csv.version>
+      <commons-math.version>3.2</commons-math.version>
+	  <commons-lang.version>3.3</commons-lang.version>
+	  <joda-time.version>2.3</joda-time.version>
+	  <jackson.version>2.3.0</jackson.version>
+	  <!-- scala 2.10 compitable -->
+	  <kafka.version>0.8.0</kafka.version>
+ 
+  </properties>
+ 
+ 
+    <modules>
+        <module>dataflux-common</module>
+        <module>dataflux-datagenerator</module>
+        <module>dataflux-producer</module>
+        <module>dataflux-batchpersist</module>
+    </modules>
+ 
+  <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>1.7</source>
+                        <target>1.7</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+    
+    
+    
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
