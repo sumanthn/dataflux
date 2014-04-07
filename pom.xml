@@ -46,6 +46,7 @@
         <module>dataflux-datagenerator</module>
         <module>dataflux-producer</module>
         <module>dataflux-batchpersist</module>
+		<module>dataflux-persister</module>
     </modules>
  
   <build>
