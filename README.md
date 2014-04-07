@@ -16,6 +16,6 @@ dataflux-batchpersist -- batch layer for persisting data into HBase
 dataflux-persister -- a common layer to be used in persistence
 
 ### Some key features
-Datageneration tries to be as close as real world, zipfian distribution for response codes, conversation flows with unique session id, generate bursts
-Flow control in batch persist
-Replay failed batches
+- Datageneration tries to be as close as real world, zipfian distribution for response codes, conversation flows with unique session id, generate bursts
+- Flow control in batch persist to handle slow consumer problem
+- Replay failed batches
