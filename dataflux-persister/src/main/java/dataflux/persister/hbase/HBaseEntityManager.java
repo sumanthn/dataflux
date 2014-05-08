@@ -108,7 +108,7 @@ public class HBaseEntityManager implements IEntityManager, Closeable {
 
     public static void main(String[] args) {
         List<WebTxnData> txnData = new ArrayList<>();
-        for(int indx = 1; indx < 100; indx++) {
+        for(int indx = 1; indx < 1000; indx++) {
             WebTxnData webTxn = new WebTxnData();
             webTxn.setTxnId(1);
             webTxn.setClientAgent("Mozilla");
